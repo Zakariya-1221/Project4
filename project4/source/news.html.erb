@@ -1,5 +1,14 @@
 <div class="container">
-  <h1>News</h1>
+
+  <div class ="cross-link">
+    <a href="http://localhost:4567/home.html"> Home </a>
+    <a href="http://localhost:4567/news.html"> News </a>
+    <a href="http://localhost:4567/research.html"> Research </a>
+    <a href="http://localhost:4567/teachings.html"> Teachings </a>
+    <a href="http://localhost:4567/students.html"> Students </a>
+  </div>  
+
+<h1>News</h1>
 
   <h2>Service:</h2>
 
@@ -37,6 +46,7 @@
       <li><a href="https://www.wired.com/story/harry-pottery-cryptocurrency-privacy-zcash-monero/">Wired</a></li>
     </ul>
   </div>
+
 </div>
 
 <style>
@@ -52,13 +62,14 @@
 h1 {
   color: #1a73e8;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 50px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 h2 {
   color: #200000;
-  font-size: 1.5em;
+  font-size: 30px;
   margin-top: 20px;
 }
 
@@ -89,6 +100,23 @@ a:hover {
   margin-right: 30px;
 }
 
+.cross-link{
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100px;    
+  background-color: #05014a;
+  border-radius: 15px;
+
+}
+
+.cross-link a{
+  color: #ADD8E6;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
 
 body {
   background-color: #ADD8E6;
