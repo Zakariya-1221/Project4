@@ -1,0 +1,49 @@
+---
+title: Home
+---
+
+<div class="profile-section">
+  <div>
+    <img src="/images/profile.jpg" alt="<%= data.professor.name %>" class="profile-image">
+  </div>
+  
+  <div>
+    <h1><%= data.professor.name %></h1>
+    
+    <table class="contact-table">
+      <tr>
+        <td>Position</td>
+        <td><%= data.professor.title %></td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td><%= data.professor.location %></td>
+      </tr>
+      <tr>
+        <td>Department</td>
+        <td><a href="<%= data.professor.department_url %>"><%= data.professor.department %></a></td>
+      </tr>
+      <tr>
+        <td>University</td>
+        <td><a href="<%= data.professor.university_url %>"><%= data.professor.university %></a></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><%= data.professor.email %></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="bio-section">
+  <p><%= data.professor.bio %></p>
+</div>
+
+<div class="bio-section">
+  <p>Prior to my current position I was a postdoc in the networks and mobile systems group at MIT, where I worked on exciting problems in the intersection of network systems, algorithms and theory. I received my PhD from the University of Illinois Urbana-Champaign (UIUC) in 2017. I did my bachelor's degree at the Indian Institute of Technology Madras in 2012. During the summer of 2016 I interned at Google, where I worked on congestion control in Google's data center networks. I was a recipient of the Joan and Lalit Bahl fellowship at UIUC.</p>
+</div>
+
+<div class="students-section">
+  <h2>Prospective Graduate Students</h2>
+  <p>I am looking for motivated students interested in networking systems and/or machine learning (particularly reinforcement learning). If you are interested, please send me an email.</p>
+</div>
