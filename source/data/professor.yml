@@ -1,0 +1,14 @@
+name: "Shaileshh Bojja Venkatakrishnan"
+title: "Assistant Professor"
+location: "Dreese Lab 572"
+department: "Department of Computer Science and Engineering"
+university: "The Ohio State University"
+email: "bojjavenkatakrishnan.2@osu.edu"
+bio: "I am an assistant professor in the computer science and engineering department at the Ohio State University. I am broadly interested in designing intelligent data-driven algorithms for current and emerging networking and distributed systems. In particular, I am interested in fundamental questions at the networking layer of blockchains and emerging large scale decentralized applications. I enjoy problems that warrant 'first-principles' thinking. Some of the other topics I have worked on in the past include scheduling algorithms for data center networks, peer-to-peer networks and information theory."
+education:
+  - "PhD from the University of Illinois Urbana-Champaign (UIUC) in 2017"
+  - "Bachelor's degree at the Indian Institute of Technology Madras in 2012"
+experience:
+  - "Postdoc in the networks and mobile systems group at MIT"
+  - "Summer 2016 internship at Google, working on congestion control in Google's data center networks"
+  - "Recipient of the Joan and Lalit Bahl fellowship at UIUC"

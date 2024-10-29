@@ -1,16 +1,28 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= data.professor.name %> - <%= current_page.data.title || "Home" %></title>
     <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <%= yield %>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <%= data.professor.name.split.first %><br>
+        <%= data.professor.name.split[1..].join(' ') %>
+      </div>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="<%= current_page.url == "/" ? "active" : "" %>">Home</a></li>
+        <li><a href="/research" class="<%= current_page.url == "/research/" ? "active" : "" %>">Research</a></li>
+        <li><a href="/news" class="<%= current_page.url == "/news/" ? "active" : "" %>">News</a></li>
+        <li><a href="/teaching" class="<%= current_page.url == "/teaching/" ? "active" : "" %>">Teaching</a></li>
+        <li><a href="/students" class="<%= current_page.url == "/students/" ? "active" : "" %>">Students</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <%= yield %>
+    </div>
   </body>
 </html>
